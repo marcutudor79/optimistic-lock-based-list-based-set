@@ -3,7 +3,7 @@ AGENT  		?= lib/deuceAgent-1.3.0.jar
 JUNIT		?= lib/junit.jar
 JAVA 		?= java
 JAVAC		?= javac
-JAVAOPT 	?= -server 
+JAVAOPT 	?= -server
 
 BIN	?= ${XJDK_HOME}/bin
 
@@ -28,7 +28,7 @@ ifeq ($(OS_NAME), Darwin)
 endif
 
 ifeq ($(OS_NAME), Linux)
-    JDK_RT ?= /usr/lib/jvm/java-1.7.0/jre/lib/rt.jar
+    JDK_RT ?= /usr/lib/jvm/jdk1.7.0_80/jre/lib/rt.jar
 endif
 
 ifeq ($(OS_NAME), SunOS)
@@ -65,9 +65,9 @@ instrument:
 	${JAVA} -cp ${AGENT} ${EXCLUDE} ${MAIN} ${JDK_RT} ${RT}
 
 compile:
-	${ANT} 
+	${ANT}
 	${ANT} jarbench
-	${ANT} jardeuce 
+	${ANT} jardeuce
 
 compilev:
 	${ANT} -v
@@ -87,7 +87,7 @@ check-notx:
 	${JAVA} ${JAVAOPT} \
 	-cp bin \
 	contention.benchmark.Test \
-	-W 2 -w 20 -a 0 -s 0 -l 2000 -t 1 -i 4096 -r 8192 -b linkedlists.lockbased.LazyLinkedListSortedSet 
+	-W 2 -w 20 -a 0 -s 0 -l 2000 -t 1 -i 4096 -r 8192 -b linkedlists.lockbased.LazyLinkedListSortedSet
 
 clean:
 	rm -rf bin/*
