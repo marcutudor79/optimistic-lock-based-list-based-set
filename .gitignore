@@ -24,3 +24,4 @@ replay_pid*
 # ignore deps folders
 deps/apache*/
 deps/jdk*/
+code/lib/rt_instrumented.jar
