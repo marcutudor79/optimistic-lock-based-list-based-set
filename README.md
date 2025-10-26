@@ -10,21 +10,23 @@ This is a java project in which an optimistic lock-based list is implemented in 
 # How to run this project
 1. Install depdendencies
 ```
-sudo apt-get install ant
 sudo apt-get install make
-sudo apt-get install openjdk-8-jdk-headless
+sudo apt-get install git-lfs
 ```
-2. Run the script from code
+2. Pull with git lfs in order to populate deps/ folder
+```
+git lfs pull
+```
+3. Open a terminal in code/ folder and run
 ```
 source env-setup.sh
 ```
-3. Decompress deps/jdk-7u80-linux-x64.tar.gz and move it to /usr/lib/jvm
-4. Run make in the code folder & wait for success
+4. Run make & make check, wait for success
 ```
-Success message:
-INFO: Start tranlating source:/usr/lib/jvm/jdk1.7.0_80/jre/lib/rt.jar target:lib/rt_instrumented.jar
-Oct 25, 2025 7:56:46 PM org.deuce.transform.asm.Agent transformJar
-INFO: Closing source:/usr/lib/jvm/jdk1.7.0_80/jre/lib/rt.jar target:lib/rt_instrumented.jar
+Oct 26, 2025 2:37:07 PM org.deuce.transform.asm.Agent transformJar
+INFO: Start tranlating source: optimistic-lock-based-list-based-set/deps/jdk1.7.0_80/jre/lib/rt.jar target:lib/rt_instrumented.jar
+Oct 26, 2025 2:37:18 PM org.deuce.transform.asm.Agent transformJar
+INFO: Closing source:/optimistic-lock-based-list-based-set/deps/jdk1.7.0_80/jre/lib/rt.jar target:lib/rt_instrumented.jar
 ```
 5. Profit!
 
