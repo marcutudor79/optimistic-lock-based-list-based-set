@@ -25,3 +25,6 @@ replay_pid*
 deps/apache*/
 deps/jdk*/
 code/lib/rt_instrumented.jar
+
+# ignore locks on office files
+*~lock*
