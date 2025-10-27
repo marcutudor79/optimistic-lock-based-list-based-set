@@ -1,8 +1,8 @@
 #!/bin/bash
 
 case $1 in
-	"1" )	echo CoarseGrainedListIntSet
-			OUTPUT="CoarseGrainedListIntSet"
+	"1" )	echo CoarseGrainedListBasedSet
+			OUTPUT="CoarseGrainedListBasedSet"
 	;;
 	"2" )	echo HandOverHandListIntSet
 			OUTPUT="HandOverHandListIntSet"
@@ -10,22 +10,32 @@ case $1 in
 	"3" )	echo LazyLinkedListSortedSet
 			OUTPUT="LazyLinkedListSortedSet"
 	;;
-	*)		echo "Specify algorithm"
-			exit 0
+    *)		echo "Specify algorithm e.g. 'test-script.sh 1' from 1,2,3" >&2
+            # If the script is being sourced, `BASH_SOURCE[0] != $0`; use return to avoid closing the SSH session.
+            if [ "${BASH_SOURCE[0]}" != "$0" ]; then
+              return 1
+            else
+              exit 1
+            fi
 esac
 
 echo "Who I am: $OUTPUT on `uname -n`"
 echo "started on" `date`
 
-for i in `seq 1 12`
+# num of threads loop
+for i in 1 4 6 8 10 12
 do
-	for j in 0 10 25 50 75 100
+	# update ratio loop
+    for j in 0 10 100
 	do
-		echo "→ $OUTPUT	$i	$j"
-		java -cp bin contention.benchmark.Test -b linkedlists.lockbased.$OUTPUT -d 3000 -t $i -u $j -i 1024 -r 2048 -W 0 | grep Throughput
-#		echo "→ $OUTPUT	$i	$j	without -W 0"
-#		java -cp bin contention.benchmark.Test -b linkedlists.lockbased.$OUTPUT -d 3000 -t $i -u $j -i 1024 -r 2048 | grep Throughput
-	done 
+		# list size loop
+        for k in 100 1000 10000
+        do
+            r=$((2 * k))
+            echo "→ $OUTPUT	threads: $i	update-ratio: $j list-size: $k"
+		    java -cp bin contention.benchmark.Test -b linkedlists.lockbased.$OUTPUT -d 2000 -t $i -u $j -i $k -r $r -W 0 | grep Throughput
+        done
+    done
 	# wait
 done
 echo "finished on" `date`
