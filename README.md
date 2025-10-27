@@ -3,7 +3,7 @@ This is a java project in which an optimistic lock-based list is implemented in 
 
 # Contents
 - [How to run the project](how-to-run-this-project)
-- [How to use the project](why-is-this-project-useful)
+- [Why is this project useful](why-is-this-project-useful)
 - [Credits](people-involved)
 - [License](license)
 
