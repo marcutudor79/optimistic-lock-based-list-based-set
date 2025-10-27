@@ -1,0 +1,114 @@
+tudor-25@lame21:~/tudor-25/optimistic-lock-based-list-based-set/code$ source test-script.sh 2
+HandOverHandListIntSet
+Who I am: HandOverHandListIntSet on lame21.enst.fr
+started on lun. 27 oct. 2025 16:41:02 CET
+→ HandOverHandListIntSet	threads: 1	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	1151675.3246753248
+→ HandOverHandListIntSet	threads: 1	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	111304.54318522217
+→ HandOverHandListIntSet	threads: 1	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	10403.394907638542
+→ HandOverHandListIntSet	threads: 1	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	1035521.9780219782
+→ HandOverHandListIntSet	threads: 1	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	108938.56143856145
+→ HandOverHandListIntSet	threads: 1	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	9494.505494505496
+→ HandOverHandListIntSet	threads: 1	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	922905.14228657
+→ HandOverHandListIntSet	threads: 1	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	105203.29670329671
+→ HandOverHandListIntSet	threads: 1	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	9188.71692461308
+→ HandOverHandListIntSet	threads: 4	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	170559.88023952095
+→ HandOverHandListIntSet	threads: 4	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	36292.41516966068
+→ HandOverHandListIntSet	threads: 4	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	6228.657014478282
+→ HandOverHandListIntSet	threads: 4	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	262956.06590114825
+→ HandOverHandListIntSet	threads: 4	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	50835.91022443891
+→ HandOverHandListIntSet	threads: 4	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	7338.8223552894215
+→ HandOverHandListIntSet	threads: 4	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	175870.75848303392
+→ HandOverHandListIntSet	threads: 4	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	52956.0878243513
+→ HandOverHandListIntSet	threads: 4	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	6083.333333333333
+→ HandOverHandListIntSet	threads: 6	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	159504.99001996007
+→ HandOverHandListIntSet	threads: 6	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	46367.896311066805
+→ HandOverHandListIntSet	threads: 6	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	7857.285429141716
+→ HandOverHandListIntSet	threads: 6	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	173365.76846307385
+→ HandOverHandListIntSet	threads: 6	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	68056.35910224439
+→ HandOverHandListIntSet	threads: 6	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	8719.560878243514
+→ HandOverHandListIntSet	threads: 6	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	168884.23153692615
+→ HandOverHandListIntSet	threads: 6	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	75415.66866267465
+→ HandOverHandListIntSet	threads: 6	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	8271.956087824352
+→ HandOverHandListIntSet	threads: 8	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	155431.92019950124
+→ HandOverHandListIntSet	threads: 8	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	56201.496259351625
+→ HandOverHandListIntSet	threads: 8	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	9923.690773067332
+→ HandOverHandListIntSet	threads: 8	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	157628.24351297406
+→ HandOverHandListIntSet	threads: 8	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	85738.78364905286
+→ HandOverHandListIntSet	threads: 8	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	11458.582834331337
+→ HandOverHandListIntSet	threads: 8	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	154260.47904191617
+→ HandOverHandListIntSet	threads: 8	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	100143.7125748503
+→ HandOverHandListIntSet	threads: 8	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	10066.268061783756
+→ HandOverHandListIntSet	threads: 10	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	176642.3940149626
+→ HandOverHandListIntSet	threads: 10	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	62934.19740777668
+→ HandOverHandListIntSet	threads: 10	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	12588.52867830424
+→ HandOverHandListIntSet	threads: 10	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	176414.46384039902
+→ HandOverHandListIntSet	threads: 10	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	108696.90927218346
+→ HandOverHandListIntSet	threads: 10	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	12845.463609172484
+→ HandOverHandListIntSet	threads: 10	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	164553.33998005983
+→ HandOverHandListIntSet	threads: 10	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	121083.79052369078
+→ HandOverHandListIntSet	threads: 10	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	12056.857855361597
+→ HandOverHandListIntSet	threads: 12	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	216023.4297108674
+→ HandOverHandListIntSet	threads: 12	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	62751.119960179196
+→ HandOverHandListIntSet	threads: 12	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	15327.51744765703
+→ HandOverHandListIntSet	threads: 12	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	212165.00498504488
+→ HandOverHandListIntSet	threads: 12	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	122234.67862481315
+→ HandOverHandListIntSet	threads: 12	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	14838.484546360918
+→ HandOverHandListIntSet	threads: 12	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	204180.9571286142
+→ HandOverHandListIntSet	threads: 12	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	136632.47011952192
+→ HandOverHandListIntSet	threads: 12	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	13332.003988035895
+finished on lun. 27 oct. 2025 16:47:43 CET
+DONE \o/
