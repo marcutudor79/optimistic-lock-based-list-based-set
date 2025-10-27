@@ -76,4 +76,4 @@ https://lames.enst.fr/grafana/d/3rE8q-FZk/dashboard-infres?orgId=2
 [Elena](https://github.com/lena0097) and me.
 
 # License
-GPL-3.0 license
+Apache License Version 2.0
