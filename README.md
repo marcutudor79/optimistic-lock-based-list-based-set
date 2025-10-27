@@ -30,6 +30,24 @@ INFO: Closing source:/optimistic-lock-based-list-based-set/deps/jdk1.7.0_80/jre/
 ```
 5. Profit!
 
+# Remote runs LAMES
+- Setup the VPN connection (Linux) as stated below:
+```
+https://eole.telecom-paris.fr/vos-services/services-numeriques/connexions-aux-reseaux/openvpn-avec-debian-gnulinux
+```
+- Use Remmina to setup a ssh connexion to one of the machines from
+```
+# install remmina
+sudo apt install remmina
+
+# site to check machines
+https://lames.enst.fr/grafana/d/3rE8q-FZk/dashboard-infres?orgId=2
+```
+- Clone the repo on the sudo apt install remminaremote machine and follow the steps on the topic above
+- Use ```test-script.ssh``` from code\ to start performing the tests
+
+! ```If needed, use scp to move the deps archives to the remote machine``` !
+
 # Why is this project useful
 It shows the differences in performance of different types of synchronization algorithms.
 
