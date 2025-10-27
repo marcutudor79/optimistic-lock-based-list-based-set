@@ -1,0 +1,114 @@
+tudor-25@lame21:~/tudor-25/optimistic-lock-based-list-based-set/code$ source test-script.sh 3
+LazyLinkedListSortedSet
+Who I am: LazyLinkedListSortedSet on lame21.enst.fr
+started on lun. 27 oct. 2025 11:57:50 CET
+→ LazyLinkedListSortedSet	threads: 1	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	6091315.027458811
+→ LazyLinkedListSortedSet	threads: 1	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	419355.1448551449
+→ LazyLinkedListSortedSet	threads: 1	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	9687.468796804793
+→ LazyLinkedListSortedSet	threads: 1	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	5538776.834747878
+→ LazyLinkedListSortedSet	threads: 1	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	276663.00549176236
+→ LazyLinkedListSortedSet	threads: 1	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	9748.87668497254
+→ LazyLinkedListSortedSet	threads: 1	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	4330849.226160758
+→ LazyLinkedListSortedSet	threads: 1	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	261744.882675986
+→ LazyLinkedListSortedSet	threads: 1	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	9319.860279441118
+→ LazyLinkedListSortedSet	threads: 4	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	2.292242265469062E7
+→ LazyLinkedListSortedSet	threads: 4	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	1604377.744510978
+→ LazyLinkedListSortedSet	threads: 4	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	40615.76846307385
+→ LazyLinkedListSortedSet	threads: 4	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	1.0032879740518963E7
+→ LazyLinkedListSortedSet	threads: 4	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	991111.2774451098
+→ LazyLinkedListSortedSet	threads: 4	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	40100.798403193614
+→ LazyLinkedListSortedSet	threads: 4	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	1988607.7844311376
+→ LazyLinkedListSortedSet	threads: 4	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	676318.3632734531
+→ LazyLinkedListSortedSet	threads: 4	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	37773.95209580838
+→ LazyLinkedListSortedSet	threads: 6	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	3.378766966067864E7
+→ LazyLinkedListSortedSet	threads: 6	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	2280181.137724551
+→ LazyLinkedListSortedSet	threads: 6	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	63435.91022443891
+→ LazyLinkedListSortedSet	threads: 6	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	1.0950827844311377E7
+→ LazyLinkedListSortedSet	threads: 6	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	1500159.102244389
+→ LazyLinkedListSortedSet	threads: 6	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	57396.00997506235
+→ LazyLinkedListSortedSet	threads: 6	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	2639353.117206983
+→ LazyLinkedListSortedSet	threads: 6	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	1032045.9081836328
+→ LazyLinkedListSortedSet	threads: 6	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	60245.762711864416
+→ LazyLinkedListSortedSet	threads: 8	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	4.348259501246883E7
+→ LazyLinkedListSortedSet	threads: 8	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	3241628.428927681
+→ LazyLinkedListSortedSet	threads: 8	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	82723.69077306734
+→ LazyLinkedListSortedSet	threads: 8	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	1.3711728179551123E7
+→ LazyLinkedListSortedSet	threads: 8	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	1915404.987531172
+→ LazyLinkedListSortedSet	threads: 8	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	78423.2303090728
+→ LazyLinkedListSortedSet	threads: 8	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	3191209.4763092273
+→ LazyLinkedListSortedSet	threads: 8	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	1362709.5808383233
+→ LazyLinkedListSortedSet	threads: 8	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	72993.51944167499
+→ LazyLinkedListSortedSet	threads: 10	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	4.3517804488778055E7
+→ LazyLinkedListSortedSet	threads: 10	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	3988775.2864972595
+→ LazyLinkedListSortedSet	threads: 10	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	99263.21036889333
+→ LazyLinkedListSortedSet	threads: 10	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	1.5544394920318725E7
+→ LazyLinkedListSortedSet	threads: 10	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	2294847.457627119
+→ LazyLinkedListSortedSet	threads: 10	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	97986.54708520179
+→ LazyLinkedListSortedSet	threads: 10	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	3770880.7980049876
+→ LazyLinkedListSortedSet	threads: 10	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	1766302.9397110112
+→ LazyLinkedListSortedSet	threads: 10	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	96223.60557768925
+→ LazyLinkedListSortedSet	threads: 12	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	4.8988370702541105E7
+→ LazyLinkedListSortedSet	threads: 12	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	4905292.123629113
+→ LazyLinkedListSortedSet	threads: 12	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	121849.0284005979
+→ LazyLinkedListSortedSet	threads: 12	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	1.8782835493519444E7
+→ LazyLinkedListSortedSet	threads: 12	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	2826540.1096163425
+→ LazyLinkedListSortedSet	threads: 12	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	124013.95117090184
+→ LazyLinkedListSortedSet	threads: 12	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	4077157.5274177473
+→ LazyLinkedListSortedSet	threads: 12	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	2036118.086696562
+→ LazyLinkedListSortedSet	threads: 12	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	107680.77689243028
+finished on lun. 27 oct. 2025 12:04:28 CET
+DONE \o/
