@@ -1,0 +1,114 @@
+tudor-25@lame21:~/tudor-25/optimistic-lock-based-list-based-set/code$ source test-script.sh 1
+CoarseGrainedListBasedSet
+Who I am: CoarseGrainedListBasedSet on lame21.enst.fr
+started on lun. 27 oct. 2025 11:49:29 CET
+→ CoarseGrainedListBasedSet	threads: 1	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	6694153.193612775
+→ CoarseGrainedListBasedSet	threads: 1	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	626006.4935064936
+→ CoarseGrainedListBasedSet	threads: 1	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	13742.257742257743
+→ CoarseGrainedListBasedSet	threads: 1	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	5586286.713286714
+→ CoarseGrainedListBasedSet	threads: 1	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	298429.07092907093
+→ CoarseGrainedListBasedSet	threads: 1	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	14085.414585414586
+→ CoarseGrainedListBasedSet	threads: 1	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	4420594.405594406
+→ CoarseGrainedListBasedSet	threads: 1	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	357641.8581418582
+→ CoarseGrainedListBasedSet	threads: 1	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	13947.552447552449
+→ CoarseGrainedListBasedSet	threads: 4	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	2464172.6546906186
+→ CoarseGrainedListBasedSet	threads: 4	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	249610.58412381427
+→ CoarseGrainedListBasedSet	threads: 4	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	9783.932135728543
+→ CoarseGrainedListBasedSet	threads: 4	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	2250819.361277445
+→ CoarseGrainedListBasedSet	threads: 4	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	121161.75736395406
+→ CoarseGrainedListBasedSet	threads: 4	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	10252.121817274088
+→ CoarseGrainedListBasedSet	threads: 4	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	1324274.9500998005
+→ CoarseGrainedListBasedSet	threads: 4	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	133730.40439340987
+→ CoarseGrainedListBasedSet	threads: 4	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	9165.252121817273
+→ CoarseGrainedListBasedSet	threads: 6	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	2188497.50499002
+→ CoarseGrainedListBasedSet	threads: 6	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	218130.73852295408
+→ CoarseGrainedListBasedSet	threads: 6	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	9709.435846230654
+→ CoarseGrainedListBasedSet	threads: 6	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	1874533.9321357287
+→ CoarseGrainedListBasedSet	threads: 6	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	115284.93013972056
+→ CoarseGrainedListBasedSet	threads: 6	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	9756.487025948103
+→ CoarseGrainedListBasedSet	threads: 6	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	1338117.7644710578
+→ CoarseGrainedListBasedSet	threads: 6	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	122620.56914628057
+→ CoarseGrainedListBasedSet	threads: 6	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	9301.89620758483
+→ CoarseGrainedListBasedSet	threads: 8	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	2385305.5832502497
+→ CoarseGrainedListBasedSet	threads: 8	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	211705.7356608479
+→ CoarseGrainedListBasedSet	threads: 8	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	9886.22754491018
+→ CoarseGrainedListBasedSet	threads: 8	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	1870966.5835411472
+→ CoarseGrainedListBasedSet	threads: 8	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	113427.9301745636
+→ CoarseGrainedListBasedSet	threads: 8	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	9879.241516966067
+→ CoarseGrainedListBasedSet	threads: 8	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	1398012.4688279303
+→ CoarseGrainedListBasedSet	threads: 8	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	116986.53366583542
+→ CoarseGrainedListBasedSet	threads: 8	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	8517.46506986028
+→ CoarseGrainedListBasedSet	threads: 10	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	2323484.289276808
+→ CoarseGrainedListBasedSet	threads: 10	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	211754.23728813563
+→ CoarseGrainedListBasedSet	threads: 10	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	10010.972568578554
+→ CoarseGrainedListBasedSet	threads: 10	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	1903348.4546360918
+→ CoarseGrainedListBasedSet	threads: 10	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	110734.6633416459
+→ CoarseGrainedListBasedSet	threads: 10	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	9771.571072319202
+→ CoarseGrainedListBasedSet	threads: 10	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	1367557.1072319204
+→ CoarseGrainedListBasedSet	threads: 10	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	120164.08977556111
+→ CoarseGrainedListBasedSet	threads: 10	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	8599.700897308077
+→ CoarseGrainedListBasedSet	threads: 12	update-ratio: 0 list-size: 100
+  Throughput (ops/s):       	2270240.777666999
+→ CoarseGrainedListBasedSet	threads: 12	update-ratio: 0 list-size: 1000
+  Throughput (ops/s):       	205030.408773679
+→ CoarseGrainedListBasedSet	threads: 12	update-ratio: 0 list-size: 10000
+  Throughput (ops/s):       	9567.796610169493
+→ CoarseGrainedListBasedSet	threads: 12	update-ratio: 10 list-size: 100
+  Throughput (ops/s):       	1857646.2381664175
+→ CoarseGrainedListBasedSet	threads: 12	update-ratio: 10 list-size: 1000
+  Throughput (ops/s):       	108470.58823529413
+→ CoarseGrainedListBasedSet	threads: 12	update-ratio: 10 list-size: 10000
+  Throughput (ops/s):       	9510.46859421735
+→ CoarseGrainedListBasedSet	threads: 12	update-ratio: 100 list-size: 100
+  Throughput (ops/s):       	1325907.3243647234
+→ CoarseGrainedListBasedSet	threads: 12	update-ratio: 100 list-size: 1000
+  Throughput (ops/s):       	115741.90333831588
+→ CoarseGrainedListBasedSet	threads: 12	update-ratio: 100 list-size: 10000
+  Throughput (ops/s):       	9730.174563591023
+finished on lun. 27 oct. 2025 11:56:02 CET
+DONE \o/
