@@ -28,3 +28,6 @@ code/lib/rt_instrumented.jar
 
 # ignore locks on office files
 *~lock*
+
+# ignore py venv
+/*venv/

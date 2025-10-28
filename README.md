@@ -1,6 +1,9 @@
 # optimistic-lock-based-list-based-set
 This is a java project in which an optimistic lock-based list is implemented in Java and then tested using the synchrobench framework.
 
+# Results
+<img title="Results" alt="Results" src="docs/AllAlgorithmsCompared.png">
+
 # Contents
 - [How to setup the project](#how-to-run-this-project)
 - [Experiment runs on VMs](#remote-runs-infres)
@@ -48,6 +51,21 @@ https://lames.enst.fr/grafana/d/3rE8q-FZk/dashboard-infres?orgId=2
 - Use ```test-script.sh``` from code\ to start performing the tests
 
 ! ```If needed, use scp to move the deps archives to the remote machine``` !
+
+# Creating the graphs
+```
+# create & activate venv
+cd <path-to-repo>/optimistic-lock-based-list-based-set/
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -U pip pandas matplotlib seaborn
+
+# Manually copy and paste from the remote machine's console from
+# started on ... till ... DONE \o/ including them in a .log file
+
+# run parser (note the space)
+python3 <path-to-repo>/optimistic-lock-based-list-based-set/code/scripts/parse_and_plot.py <path-to-repo>/optimistic-lock-based-list-based-set/<your-file>.log --outdir <path-to-repo>/optimistic-lock-based-list-based-set/docs
+```
 
 # Project structure
 ```
