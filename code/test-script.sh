@@ -1,43 +1,64 @@
 #!/bin/bash
 
-case $1 in
-	"1" )	echo CoarseGrainedListBasedSet
-			OUTPUT="CoarseGrainedListBasedSet"
-	;;
-	"2" )	echo HandOverHandListIntSet
-			OUTPUT="HandOverHandListIntSet"
-	;;
-	"3" )	echo LazyLinkedListSortedSet
-			OUTPUT="LazyLinkedListSortedSet"
-	;;
-    *)		echo "Specify algorithm e.g. 'test-script.sh 1' from 1,2,3" >&2
-            # If the script is being sourced, `BASH_SOURCE[0] != $0`; use return to avoid closing the SSH session.
-            if [ "${BASH_SOURCE[0]}" != "$0" ]; then
-              return 1
-            else
-              exit 1
-            fi
-esac
-
-echo "Who I am: $OUTPUT on `uname -n`"
+# array of algorithm names
+OUTPUT=(CoarseGrainedListBasedSet HandOverHandListIntSet LazyLinkedListSortedSet)
 echo "started on" `date`
 
-# num of threads loop
-for i in 1 4 6 8 10 12
+echo "Starting with fixed update ratio 10% and varying list size"
+echo "--------------------------------------------------------------------"
+# algorithm loop - each graph
+for algo in 0 1 2
 do
-	# update ratio loop
-    for j in 0 10 100
-	do
-		# list size loop
-        for k in 100 1000 10000
+    echo "→ Running: ${OUTPUT[$algo]} with update ratio 10"
+    # each line in graph
+    for k in 100 1000 10000
+    do
+        echo "list-size: $k"
+        # each point in line
+        for i in 1 4 6 8 10 12
         do
             r=$((2 * k))
-            echo "→ $OUTPUT	threads: $i	update-ratio: $j list-size: $k"
-		    java -cp bin contention.benchmark.Test -b linkedlists.lockbased.$OUTPUT -d 2000 -t $i -u $j -i $k -r $r -W 0 | grep Throughput
+            echo "threads: $i "
+            java -cp bin contention.benchmark.Test -b linkedlists.lockbased.${OUTPUT[$algo]} -d 2000 -t $i -u 10 -i $k -r $r -W 0 | grep Throughput
         done
     done
-	# wait
 done
+echo "--------------------------------------------------------------------"
+echo " "
+echo "Starting with fixed list size 100 and varying update ratios"
+echo "--------------------------------------------------------------------"
+# algorithm loop - each graph
+for algo in 0 1 2
+do
+    echo "→ Running: ${OUTPUT[$algo]} with list size 100"
+    # each line in graph
+    for j in 0 10 100
+    do
+        echo "update ratio: $j"
+        for i in 1 4 6 8 10 12
+        do
+            echo "threads: $i "
+            java -cp bin contention.benchmark.Test -b linkedlists.lockbased.${OUTPUT[$algo]} -d 2000 -t $i -u $j -i 100 -r 200 -W 0 | grep Throughput
+        done
+    done
+done
+echo "--------------------------------------------------------------------"
+echo " "
+echo "Starting with fixed update ratio of 10% and list size 1000"
+echo "--------------------------------------------------------------------"
+# algorithm loop - each graph
+for algo in 0 1 2
+do
+    echo "→ Running: ${OUTPUT[$algo]} with update ratio 10% and lise size 1000"
+    # each point in line
+    for i in 1 4 6 8 10 12
+    do
+        echo "threads: $i "
+        java -cp bin contention.benchmark.Test -b linkedlists.lockbased.${OUTPUT[$algo]} -d 2000 -t $i -u 10 -i 1000 -r 2000 -W 0 | grep Throughput
+    done
+done
+echo "--------------------------------------------------------------------"
+echo " "
 echo "finished on" `date`
 echo "DONE \o/"
 
