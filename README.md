@@ -4,6 +4,9 @@ This is a java project in which an optimistic lock-based list is implemented in 
 # Results
 <img title="Results" alt="Results" src="docs/AllAlgorithmsCompared.png">
 
+### Wait free HoH improves performance as seen below:
+<img titke="Results" alt="Results" src="docs/AllAlgorithmsCompared2.png">
+
 # Contents
 - [How to setup the project](#how-to-run-this-project)
 - [Experiment runs on VMs](#remote-runs-infres)

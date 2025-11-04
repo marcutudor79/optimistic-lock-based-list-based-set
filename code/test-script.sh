@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # array of algorithm names
-OUTPUT=(CoarseGrainedListBasedSet HandOverHandListIntSet LazyLinkedListSortedSet)
+OUTPUT=(CoarseGrainedListBasedSet HandOverHandListIntSetWaitFreeCont LazyLinkedListSortedSet)
 echo "started on" `date`
 
 echo "Starting with fixed update ratio 10% and varying list size"
